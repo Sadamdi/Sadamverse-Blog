@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="" />
+		<meta
+			name="author"
+			content="" />
+
+		<title>Sulthan Adam Rahmadi</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link
+			href="css/bootstrap.min.css"
+			rel="stylesheet" />
+
+		<!-- Custom CSS -->
+		<link
+		   href="css/Sadamdi.css"
+	       rel="stylesheet" />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav
+			class="navbar navbar-inverse navbar-fixed-top"
+			role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle"
+						data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a
+						class="navbar-brand"
+						href="index.html">
+						SadamVerse
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div
+					class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="login.html">Login</a>
+						</li>
+						<li>
+							<a href="signup.html">Sign up</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+
+		<!-- Page Content -->
+		<div class="container">
+			<div class="row">
+				<!-- Blog Post Content Column -->
+				<div class="col-lg-12">
+					<!-- Blog Post -->
+
+					<!-- Title -->
+					<h1 class="post-title">Algoritma untuk Menghitung Jumlah Deret Aritmatika</h1>
+
+					<!-- Author -->
+					<p class="lead">by Sulthan Adam Rahmadi - 240605110109</p>
+
+					<hr />
+
+					<!-- Date/Time -->
+					<p>
+						<span class="glyphicon glyphicon-time"></span>
+						Posted on August 28, 2024 at 11:50 PM
+					</p>
+
+					<hr />
+
+					<!-- Post Content -->
+					<h2>Pengertian Algoritma</h2>
+					<p>
+						Algoritma adalah serangkaian langkah-langkah untuk menyelesaikan masalah yang disusun dalam bahasa yang mudah dipahami oleh manusia. Langkah-langkah ini kemudian dapat diubah menjadi program komputer untuk mempercepat atau mengotomatiskan penyelesaian masalah tersebut.
+					</p>
+					
+					<h2>Ciri-Ciri Algoritma</h2>
+					<ul>
+						<li><strong>Jelas dan Terdefinisi:</strong> Setiap langkah dalam algoritma harus mudah dipahami dan tidak membingungkan.</li>
+						<li><strong>Input dan Output:</strong> Algoritma biasanya dimulai dengan menerima input (data awal) dan menghasilkan output (hasil akhir).</li>
+						<li><strong>Akhir yang Jelas:</strong> Algoritma harus memiliki akhir atau penyelesaian yang pasti setelah sejumlah langkah yang terbatas.</li>
+						<li><strong>Efisiensi:</strong> Algoritma harus menyelesaikan tugasnya dengan cara yang paling efektif, tanpa menghabiskan banyak waktu atau sumber daya.</li>
+						<li><strong>Deterministik:</strong> Dengan input yang sama, algoritma harus selalu menghasilkan output yang sama.</li>
+					</ul>
+				
+					<h2>Sifat Algoritma</h2>
+					<ul>
+						<li>Tidak menggunakan simbol atau sintaks dari suatu Bahasa pemrograman.</li>
+						<li>Tidak bergantung pada suatu Bahasa pemrograman.</li>
+						<li>Notasinya dapat digunakan untuk semua Bahasa manapun.</li>
+						<li>Algoritma dapat digunakan untuk menginterpretasikan suatu urutan kejadian secara logis dan dapat digunakan diterapkan di semua kejadian sehari-hari.</li>
+					</ul>
+				
+					<h2>Contoh Algoritma: Menghitung Jumlah Deret Aritmatika</h2>
+					<p>
+						<strong>Masalah:</strong> Menghitung jumlah dari sebuah deret aritmatika, yaitu deret angka yang memiliki selisih tetap antara satu angka dengan angka berikutnya.
+					</p>
+					<p>
+						<strong>Contoh:</strong> Jika suku pertama adalah 3, bedanya 2, dan jumlah suku yang ingin dihitung adalah 5, deretnya adalah 3, 5, 7, 9, 11.
+					</p>
+					<p><strong>Langkah-langkah Algoritma:</strong></p>
+					<ul>
+						<li>Mulai.</li>
+						<li>Masukkan suku pertama (misalnya <code>a = 3</code>), beda antar suku (misalnya <code>b = 2</code>), dan jumlah suku (misalnya <code>n = 5</code>).</li>
+						<li>Hitung suku terakhir dengan rumus: <code>suku_terakhir = a + (n - 1) * b</code>. Dalam contoh ini, <code>suku_terakhir = 3 + (5 - 1) * 2 = 11</code>.</li>
+						<li>Hitung jumlah deret dengan rumus: <code>jumlah = n * (a + suku_terakhir) / 2</code>. Dalam contoh ini, <code>jumlah = 5 * (3 + 11) / 2 = 35</code>.</li>
+						<li>Tampilkan hasilnya. Dalam contoh ini, jumlah deret adalah 35.</li>
+						<li>Selesai.</li>
+					</ul>
+					<h2>Flowchart Algoritma</h2>
+					<p>
+						<img src="img/algoflowmatika.png" alt="Flowchart Algoritma Deret Aritmatika" style="max-width: 100%; height: auto;">
+					</p>
+					<h2>Kesimpulan</h2>
+    <p>
+        Algoritma adalah serangkaian langkah-langkah terstruktur yang dirancang untuk menyelesaikan suatu masalah atau mencapai tujuan tertentu. Langkah-langkah ini harus jelas, terdefinisi, efisien, dan deterministik, dengan titik akhir yang pasti. Algoritma tidak tergantung pada bahasa pemrograman tertentu dan dapat digunakan dalam berbagai konteks, baik dalam pemrograman komputer maupun dalam kehidupan sehari-hari.
+    </p>
+
+    <h2>Daftar Pustaka</h2>
+    <ol>
+        <li>
+            Sutanto, T. (2019). <i>Modul Algoritma dan Pemrograman</i>. Yogyakarta: Politeknik Kesehatan Kemenkes Yogyakarta. Diakses dari 
+            <a href="http://eprints.poltekkesjogja.ac.id/11279/1/Modul%20Algoritma%20dan%20Pemograman.pdf">http://eprints.poltekkesjogja.ac.id/11279/1/Modul%20Algoritma%20dan%20Pemograman.pdf</a>
+        </li>
+        <li>
+            Universitas Terbuka. (n.d.). <i>Algoritma dan Pemrograman</i>. Tangerang Selatan: Universitas Terbuka. Diakses dari 
+            <a href="https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/MSIM4203-M1.pdf">https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/MSIM4203-M1.pdf</a>
+        </li>
+    </ol>
+
+					<hr />
+
+					<!-- Blog Comments -->
+
+					<!-- Comments Form -->
+					<div class="well">
+						<h4>Leave a Comment:</h4>
+						<form
+							id="comment-form"
+							role="form">
+							<div class="form-group">
+								<textarea
+									class="form-control"
+									rows="3"></textarea>
+							</div>
+							<button
+								type="submit"
+								class="btn btn-primary">
+								Submit
+							</button>
+						</form>
+					</div>
+
+					<hr />
+
+					<!-- Posted Comments -->
+
+					<script>
+						document
+							.getElementById('comment-form')
+							.addEventListener('submit', function (event) {
+								event.preventDefault(); // Mencegah form submit secara default
+								window.location.href = 'comingsoon.html'; // Arahkan ke halaman comingsoon.html
+							});
+					</script>
+
+					<!-- Comment -->
+					<div class="media">
+						<a
+							class="pull-left"
+							href="#">
+							<img
+								class="media-object"
+								src="http://placehold.it/64x64"
+								alt="" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<a href="sadam.html">Algoritma untuk Menghitung Jumlah Deret Aritmatika</a>
+								<small>August 28, 2024 at 11:50 PM</small>
+							</h4>
+							Algoritma adalah serangkaian langkah-langkah untuk menyelesaikan masalah yang disusun dalam bahasa yang mudah dipahami oleh manusia. Langkah-langkah ini kemudian dapat diubah menjadi program komputer untuk mempercepat atau mengotomatiskan penyelesaian masalah tersebut.
+						</div>
+					</div>
+
+					<!-- Comment -->
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://placehold.it/64x64" alt="" />
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">
+            <a href="krishna.html">Algoritma sederhana untuk sistem kasir yang menghitung total
+				belanja, diskon, dan kembalian</a>
+            <small>August 30, 2024 at 09:25 PM</small>
+        </h4>
+        Algoritma pemrograman adalah serangkaian instruksi atau
+						langkah-langkah yang sistematis dan logis untuk menyelesaikan suatu
+						masalah atau tugas tertentu dalam pemrograman. Algoritma ini
+						menentukan bagaimana data diproses dan dioperasikan untuk mencapai
+						hasil yang diinginkan. Dalam konteks pemrograman, algoritma
+						berfungsi sebagai panduan yang kemudian akan diterjemahkan ke dalam
+						kode pemrograman yang dapat dijalankan oleh komputer.
+
+        <!-- Nested Comment -->
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://placehold.it/64x64" alt="" />
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <a href="irfan.html">Algoritma cara melakukan pembelian makanan di kantin ma'had putra</a>
+                    <small>August 30, 2024 at 10:45 PM</small>
+                </h4>
+                Algoritma Pemrogaman merupakan suatu proses yang dilakukan secara
+						berurutan dan terstruktur untuk menyelesaikan masalah. Algoritma dan
+						Pemrograman memiliki karakteristik jelas dan efektif. Algoritma
+						Pemrogaman ibaratnya adalah resep cara membuat sebuah masakan.
+						Masakan yang dibuat dengan mengikuti cara yang tertulis pada
+						resepnya jelas akan memiliki rasa yang enak. Sebaliknya, jika suatu
+						masakan dibuat dengan tidak mengikuti cara pada resepnya, maka
+						rasanya akan jelas berbeda.
+            </div>
+        </div>
+        <!-- End Nested Comment -->
+    </div>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Copyright &copy; SadamVerse 2024</p>
+					</div>
+					<!-- /.col-lg-12 -->
+				</div>
+				<!-- /.row -->
+			</div>
+		</footer>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
